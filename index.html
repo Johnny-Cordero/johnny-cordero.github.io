@@ -341,6 +341,108 @@
         text-align: center;
       }
     }
+    /* =========================
+   LOOP DE BADGES / CERTIFICACIONES
+   ========================= */
+
+.cert-badges-wrapper {
+    margin-top: 28px;
+}
+
+.cert-badges-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #94a3b8;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+
+.cert-marquee {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.cert-track {
+    display: flex;
+    width: max-content;
+    animation: cert-scroll 28s linear infinite;
+    will-change: transform;
+}
+
+.cert-group {
+    display: flex;
+    gap: 22px;
+    flex-shrink: 0;
+    padding-right: 22px;
+}
+
+.cert-badge {
+    width: 180px;
+    height: 180px;
+    flex: 0 0 auto;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.18);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-badge:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56, 189, 248, 0.45);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
+}
+
+.cert-badge img {
+    max-width: 100%;
+    max-height: 130px;
+    object-fit: contain;
+    display: block;
+}
+
+.cert-marquee:hover .cert-track {
+    animation-play-state: paused;
+}
+
+@keyframes cert-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .cert-badge {
+        width: 140px;
+        height: 140px;
+        padding: 14px;
+    }
+
+    .cert-badge img {
+        max-height: 100px;
+    }
+
+    .cert-track {
+        animation-duration: 22s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cert-track {
+        animation: none;
+    }
+}
   </style>
 </head>
 <body>
@@ -453,13 +555,71 @@
     </div>
 
     <div class="section">
-      <h2>Certificaciones</h2>
-      <div class="card">
-        <p><strong>Cisco</strong><br>CCNA <br>CCNP Collaboration</p>
-        <p><strong>Fortinet</strong><br>Fortinet Certified Professional - Secure Networking <br>Fortinet Certified Solution Specialist - Secure Networking </p>
-        <p><strong>CompTIA</strong><br>Network+</p>
-      </div>
+    <h2>Certificaciones</h2>
+    <div class="card">
+        <strong>Cisco</strong><br>
+        CCNA<br>
+        CCNP Collaboration<br><br>
+
+        <strong>Fortinet</strong><br>
+        Fortinet Certified Professional - Secure Networking<br>
+        Fortinet Certified Solution Specialist - Secure Networking<br><br>
+
+        <strong>CompTIA</strong><br>
+        Network+
     </div>
+
+    <div class="cert-badges-wrapper">
+        <div class="cert-badges-title">Credenciales destacadas</div>
+
+        <div class="cert-marquee">
+            <div class="cert-track">
+
+                <div class="cert-group">
+                    <div class="cert-badge">
+                        <img src="ccna.png" alt="Cisco Certified CCNA">
+                    </div>
+
+                    <div class="cert-badge">
+                        <img src="ccnp-collaboration.png" alt="Cisco Certified CCNP Collaboration">
+                    </div>
+
+                    <div class="cert-badge">
+                        <img src="fortinet-fcp-secure-networking.png" alt="Fortinet Certified Professional Secure Networking">
+                    </div>
+
+                    <div class="cert-badge">
+                        <img src="fortinet-fcss-secure-networking.png" alt="Fortinet Certified Solution Specialist Secure Networking">
+                    </div>
+                </div>
+
+                <div class="cert-group" aria-hidden="true">
+                    <div class="cert-badge">
+                        <img src="ccna.png" alt="Cisco Certified CCNA">
+                    </div>
+
+                    <div class="cert-badge">
+                        <img src="ccnp-collaboration.png" alt="Cisco Certified CCNP Collaboration">
+                    </div>
+
+                    <div class="cert-badge">
+                        <img src="fortinet-fcp-secure-networking.png" alt="Fortinet Certified Professional Secure Networking">
+                    </div>
+
+                    <div class="cert-badge">
+                        <img src="fortinet-fcss-secure-networking.png" alt="Fortinet Certified Solution Specialist Secure Networking">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Formación Académica y Ejecutiva</h2>
+    ...
+</div>
 
     <div class="section">
       <h2>Formación Académica y Ejecutiva</h2>
