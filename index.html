@@ -24,7 +24,7 @@
 
     header {
       text-align: center;
-      padding: 72px 20px 60px;
+      padding: 88px 20px 74px;
       background: linear-gradient(135deg, #1e293b, #0f172a);
       border-bottom: 1px solid rgba(56, 189, 248, 0.15);
     }
@@ -39,33 +39,54 @@
       margin-bottom: 20px;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 3.4rem;
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: -0.5px;
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 16px;
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 999px;
+      color: #9fdcff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.08);
     }
 
-   .subtitle {
-  margin: 18px auto 0;
-  max-width: 900px;
-  font-size: 1.2rem;
-  color: #dbe7f3;
-  font-weight: 500;
-  line-height: 1.6;
-}
+    h1 {
+      margin: 0;
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.6px;
+    }
 
-.hero-note {
-  margin: 22px auto 0;
-  max-width: 900px;
-  color: #a9bbcf;
-  font-size: 1.03rem;
-  line-height: 1.8;
-}
+    .subtitle {
+      margin: 20px auto 0;
+      max-width: 920px;
+      font-size: 1.22rem;
+      color: #dbe7f3;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    .hero-note {
+      margin: 22px auto 0;
+      max-width: 920px;
+      color: #a9bbcf;
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+
+    .hero-impact {
+      margin: 24px auto 0;
+      max-width: 900px;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+    }
 
     .hero-buttons {
-      margin-top: 26px;
+      margin-top: 28px;
       display: flex;
       justify-content: center;
       gap: 14px;
@@ -89,6 +110,7 @@
     .btn-primary:hover {
       background: #67d3ff;
       transform: translateY(-2px);
+      text-decoration: none;
     }
 
     .btn-secondary {
@@ -100,6 +122,7 @@
     .btn-secondary:hover {
       background: rgba(56, 189, 248, 0.08);
       transform: translateY(-2px);
+      text-decoration: none;
     }
 
     .container {
@@ -170,7 +193,7 @@
       font-size: 2rem;
       font-weight: 700;
       color: #38bdf8;
-      line-height: 1.1;
+      line-height: 1.2;
       margin-bottom: 8px;
     }
 
@@ -248,17 +271,17 @@
       }
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
       }
 
       .subtitle {
-        font-size: 1rem;
+        font-size: 1.02rem;
       }
     }
 
     @media (max-width: 640px) {
       header {
-        padding: 55px 18px 45px;
+        padding: 58px 18px 48px;
       }
 
       .profile-photo {
@@ -266,8 +289,21 @@
         height: 130px;
       }
 
+      .hero-badge {
+        font-size: 0.82rem;
+      }
+
       h1 {
-        font-size: 2.1rem;
+        font-size: 2.15rem;
+      }
+
+      .subtitle {
+        font-size: 0.98rem;
+      }
+
+      .hero-note,
+      .hero-impact {
+        font-size: 0.95rem;
       }
 
       .container {
@@ -297,54 +333,55 @@
 
   <header>
     <img src="johnny-cordero.jpg" alt="Johnny Cordero" class="profile-photo">
+    <div class="hero-badge">Operaciones • Liderazgo • Transformación</div>
     <h1>Johnny Cordero</h1>
     <p class="subtitle">Liderazgo Operativo | Transformación de Procesos | Desarrollo de Capacidades</p>
-    <p class="hero-note">Impulsando resultados a través del liderazgo de equipos, la optimización operativa y el desarrollo de capacidades técnicas y organizacionales en entornos empresariales de alta exigencia.</p>
-    <p class="hero-impact">Reconocido como Líder del Año 2024 &2 025 | 100% puntualidad en ejecución de proyectos</p>
-    
+    <p class="hero-note">Impulsando resultados mediante liderazgo de equipos, optimización operativa y fortalecimiento de capacidades técnicas y organizacionales en entornos empresariales de alta exigencia.</p>
+    <p class="hero-impact">Líder del Año 2024–2025 • 100% de puntualidad en ejecución de proyectos durante 2025</p>
+
     <div class="hero-buttons">
-      <a class="btn btn-primary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank">Ver LinkedIn</a>
-      <a class="btn btn-secondary" href="#contacto">Contacto</a>
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank">Ver perfil en LinkedIn</a>
+      <a class="btn btn-secondary" href="#contacto">Contactar</a>
     </div>
   </header>
 
   <div class="container">
 
-<div class="section">
-  <h2>Impacto Profesional</h2>
-  <div class="metrics-grid">
-    <div class="metric-card">
-      <div class="metric-number">2024–2025</div>
-      <div class="metric-label">Reconocido como Supervisor/Líder del Año</div>
+    <div class="section">
+      <h2>Impacto Profesional</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">2024–2025</div>
+          <div class="metric-label">Reconocido como Supervisor/Líder del Año</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">91% → 100%</div>
+          <div class="metric-label">Mejora en puntualidad de implementaciones de proyectos entre 2024 y 2025</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">Liderazgo</div>
+          <div class="metric-label">Alta valoración en liderazgo, clima y compromiso del equipo</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">Formación</div>
+          <div class="metric-label">Trayectoria combinada en certificaciones técnicas y formación ejecutiva internacional</div>
+        </div>
+      </div>
     </div>
-    <div class="metric-card">
-      <div class="metric-number">91% → 100%</div>
-      <div class="metric-label">Mejora en puntualidad de ejecución de proyectos (91% → 100%) entre 2024 y 2025</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-number">Liderazgo</div>
-      <div class="metric-label">Alta valoración en liderazgo, clima y compromiso del equipo</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-number">Formación</div>
-      <div class="metric-label">Trayectoria combinada en certificaciones técnicas y formación ejecutiva internacional</div>
-    </div>
-  </div>
-</div>
 
     <div class="section">
-  <h2>Logros Relevantes</h2>
-  <div class="card">
-    <ul>
-      <li><strong>Reconocimiento al liderazgo:</strong> seleccionado como Supervisor/Líder del Año durante 2024 y 2025, reflejando consistencia en desempeño, conducción de equipos y generación de resultados.</li>
-      <li><strong>Transformación operativa:</strong> liderazgo en iniciativas de mejora de procesos internos, incluyendo la internalización estratégica de capacidades operativas previamente tercerizadas.</li>
-      <li><strong>Impacto técnico:</strong> definición y fortalecimiento de estándares operativos en infraestructura crítica, incluyendo la reorganización física de gabinetes técnicos y la creación de protocolos internos de gestión.</li>
-      <li><strong>Desarrollo de capacidades:</strong> diseño, implementación y escalamiento de un laboratorio de servicios broadband en la Academia Claro, habilitado posteriormente para uso transversal en la organización.</li>
-      <li><strong>Formación y talento:</strong> liderazgo en la transformación del proceso de capacitación del área de negocios, desde el levantamiento de necesidades mediante assessment hasta el despliegue de entrenamientos alineados a brechas identificadas.</li>
-    </ul>
-  </div>
-</div>
-    
+      <h2>Logros Relevantes</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Reconocimiento al liderazgo:</strong> seleccionado como Supervisor/Líder del Año durante 2024 y 2025, reflejando consistencia en desempeño, conducción de equipos y generación de resultados.</li>
+          <li><strong>Transformación operativa:</strong> liderazgo en iniciativas de mejora de procesos internos, incluyendo la internalización estratégica de capacidades operativas previamente tercerizadas.</li>
+          <li><strong>Impacto técnico:</strong> definición y fortalecimiento de estándares operativos en infraestructura crítica, incluyendo la reorganización física de gabinetes técnicos y la creación de protocolos internos de gestión.</li>
+          <li><strong>Desarrollo de capacidades:</strong> diseño, implementación y escalamiento de un laboratorio de servicios broadband en la Academia Claro, habilitado posteriormente para uso transversal en la organización.</li>
+          <li><strong>Formación y talento:</strong> liderazgo en la transformación del proceso de capacitación del área de negocios, desde el levantamiento de necesidades mediante assessment hasta el despliegue de entrenamientos alineados a brechas identificadas.</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="section">
       <h2>Resumen Ejecutivo</h2>
       <div class="card">
@@ -366,90 +403,73 @@
       </div>
 
       <div class="section">
-        <h2>Logros Clave</h2>
-        <div class="card">
-          <ul>
-            <li>Resultado ECO sobresaliente con alto nivel de compromiso del equipo</li>
-            <li>Implementación de planes de capacitación técnica post-assessment</li>
-            <li>Impulso de mejora continua en procesos operativos</li>
-            <li>Desarrollo continuo del perfil técnico con recertificaciones internacionales</li>
-          </ul>
+        <h2>Habilidades Clave</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Liderazgo</h3>
+            <ul>
+              <li>Liderazgo de equipos técnicos</li>
+              <li>Desarrollo de talento</li>
+              <li>Orientación a resultados</li>
+              <li>Comunicación efectiva</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Operaciones</h3>
+            <ul>
+              <li>Gestión de operaciones de campo</li>
+              <li>Mejora continua</li>
+              <li>Coordinación inter-áreas</li>
+              <li>Aseguramiento de calidad</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Tecnología</h3>
+            <ul>
+              <li>Networking</li>
+              <li>Collaboration</li>
+              <li>Security</li>
+              <li>Automation en desarrollo</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="section">
-      <h2>Habilidades Clave</h2>
-      <div class="skills-grid">
-        <div class="skill-box">
-          <h3>Liderazgo</h3>
-          <ul>
-            <li>Liderazgo de equipos técnicos</li>
-            <li>Desarrollo de talento</li>
-            <li>Orientación a resultados</li>
-            <li>Comunicación efectiva</li>
-          </ul>
-        </div>
-        <div class="skill-box">
-          <h3>Operaciones</h3>
-          <ul>
-            <li>Gestión de operaciones de campo</li>
-            <li>Mejora continua</li>
-            <li>Coordinación inter-áreas</li>
-            <li>Aseguramiento de calidad</li>
-          </ul>
-        </div>
-        <div class="skill-box">
-          <h3>Tecnología</h3>
-          <ul>
-            <li>Networking</li>
-            <li>Collaboration</li>
-            <li>Security</li>
-            <li>Automation en desarrollo</li>
-          </ul>
-        </div>
+      <h2>Certificaciones</h2>
+      <div class="card">
+        <p><strong>Cisco</strong><br>CCNA | CCNP Collaboration</p>
+        <p><strong>Fortinet</strong><br>Fortinet Certified Professional – Secure Networking<br>Fortinet Certified Solution Specialist – Secure Networking</p>
+        <p><strong>CompTIA</strong><br>Network+</p>
       </div>
     </div>
 
-    <div class="two-columns">
     <div class="section">
-  <h2>Certificaciones</h2>
-  <div class="card">
-    <p><strong>Cisco</strong><br>CCNA | CCNP Collaboration</p>
+      <h2>Formación Académica y Ejecutiva</h2>
+      <div class="card">
+        <p><strong>Global MBA – Gestión Estratégica de los Negocios</strong></p>
+        <p>Formación ejecutiva internacional cursada en <strong>ADEN Business School</strong>, con titulación respaldada por <strong>ADEN</strong> y <strong>EUNCET Business School, centro adscrito a la Universitat Politècnica de Catalunya (UPC), España</strong>.</p>
+        <p>Complementado con la certificación de <strong>The George Washington University School of Business</strong>: <strong>Specialization in Strategic Business Management</strong>.</p>
 
-    <p><strong>Fortinet</strong><br>
-    Fortinet Certified Professional – Secure Networking<br>
-    Fortinet Certified Solution Specialist – Secure Networking</p>
+        <br>
 
-    <p><strong>CompTIA</strong><br>Network+</p>
-  </div>
-</div>
+        <p><strong>Programa de Liderazgo Gerencial</strong></p>
+        <p>ADEN Business School | Cursado durante 2024</p>
+        <p>Programa orientado al fortalecimiento de competencias de liderazgo, gestión y visión ejecutiva.</p>
 
-<div class="section">
-  <h2>Formación Académica y Ejecutiva</h2>
-  <div class="card">
-    <p><strong>Global MBA – Gestión Estratégica de los Negocios</strong></p>
-    <p>Formación ejecutiva internacional cursada en <strong>ADEN Business School</strong>, con titulación respaldada por <strong>ADEN</strong> y <strong>EUNCET Business School, centro adscrito a la Universitat Politècnica de Catalunya (UPC), España</strong>.</p>
-    <p>Complementado con la certificación de <strong>The George Washington University School of Business</strong>: <strong>Specialization in Strategic Business Management</strong>.</p>
+        <br>
 
-    <br>
+        <p><strong>Licenciatura en Informática</strong></p>
+        <p>Universidad Autónoma de Santo Domingo (UASD)</p>
+        <p>Graduado con honores: <strong>Cum Laude</strong>.</p>
 
-    <p><strong>Programa de Liderazgo Gerencial</strong></p>
-    <p>ADEN Business School | Cursado durante 2024</p>
-    <p>Programa orientado al fortalecimiento de competencias de liderazgo, gestión y visión ejecutiva.</p>
+        <br>
 
-    <br>
-
-    <p><strong>Licenciatura en Informática</strong></p>
-    <p>Universidad Autónoma de Santo Domingo (UASD)</p>
-    <p>Graduado con honores: <strong>Cum Laude</strong>.</p>
-
-    <br>
-
-    <p><strong>Bachiller Técnico en Electrónica, mención Mantenimiento Computacional</strong></p>
-    <p>Liceo Técnico Unión Panamericana</p>
-  </div>
-</div>
+        <p><strong>Bachiller Técnico en Electrónica, mención Mantenimiento Computacional</strong></p>
+        <p>Liceo Técnico Unión Panamericana</p>
+      </div>
+    </div>
 
     <div class="section">
       <h2>Formación Complementaria en Liderazgo y Gestión</h2>
