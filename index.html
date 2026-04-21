@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<img src="Johnny Cordero.jpg" alt="Johnny Cordero" style="width:150px;border-radius:50%;margin-top:20px;">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Johnny Cordero | Perfil Profesional</title>
@@ -16,8 +15,18 @@ body {
 
 header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px 80px;
     background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -25,8 +34,15 @@ h1 {
     margin: 0;
 }
 
+.subtitle {
+    margin-top: 12px;
+    font-size: 1.05rem;
+    color: #cbd5e1;
+}
+
 h2 {
     color: #38bdf8;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -36,14 +52,15 @@ h2 {
 }
 
 .section {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .card {
     background: #1e293b;
     padding: 20px;
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 10px;
+    line-height: 1.7;
 }
 
 a {
@@ -51,10 +68,39 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 24px;
     background: #020617;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .container {
+        padding: 30px 16px;
+    }
+
+    .card {
+        padding: 18px;
+    }
 }
 </style>
 </head>
@@ -62,8 +108,9 @@ footer {
 <body>
 
 <header>
+    <img src="Johnny Cordero.jpg" alt="Johnny Cordero" class="profile-photo">
     <h1>Johnny Cordero</h1>
-    <p>Líder de Operaciones | MBA | Transformación Operativa & Evolución Tecnológica</p>
+    <p class="subtitle">Líder de Operaciones | MBA | Transformación Operativa & Evolución Tecnológica</p>
 </header>
 
 <div class="container">
@@ -71,13 +118,11 @@ footer {
     <div class="section">
         <h2>Resumen Ejecutivo</h2>
         <div class="card">
-Profesional con sólida trayectoria en liderazgo de operaciones en telecomunicaciones, gestionando equipos técnicos y garantizando la ejecución de servicios para clientes corporativos.
+            Profesional con sólida trayectoria en liderazgo de operaciones en telecomunicaciones, gestionando equipos técnicos y garantizando la ejecución de servicios para clientes corporativos.<br><br>
 
-Mi perfil integra ejecución operativa, liderazgo de equipos y visión estratégica, permitiéndome alinear la operación con los objetivos del negocio y generar impacto sostenible.
+            Mi perfil integra ejecución operativa, liderazgo de equipos y visión estratégica, permitiéndome alinear la operación con los objetivos del negocio y generar impacto sostenible.<br><br>
 
-Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda contribuir en iniciativas de transformación, optimización de procesos y desarrollo organizacional.
-            <br><br>
-            Combino ejecución operativa, liderazgo y visión estratégica, alineando la operación con los objetivos del negocio.
+            Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda contribuir en iniciativas de transformación, optimización de procesos y desarrollo organizacional.
         </div>
     </div>
 
@@ -85,8 +130,7 @@ Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda 
         <h2>Experiencia</h2>
         <div class="card">
             <strong>Claro Dominicana</strong><br>
-            Líder de Operaciones de Campo Negocios Metro-Este
-            <br><br>
+            Líder de Operaciones de Campo Negocios Metro-Este<br><br>
             Liderazgo de equipos técnicos, coordinación inter-áreas y aseguramiento de calidad en servicios empresariales.
         </div>
     </div>
@@ -96,7 +140,7 @@ Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda 
         <div class="card">
             ✔ Resultado ECO: 96% (alto compromiso del equipo)<br>
             ✔ Implementación de planes de capacitación técnica<br>
-            ✔ Mejora continua de procesos operativos<br>
+            ✔ Mejora continua de procesos operativos
         </div>
     </div>
 
@@ -115,14 +159,16 @@ Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda 
             Global MBA – Gestión Estratégica de los Negocios (ADEN)
         </div>
     </div>
-    <div class="section">
-    <h2>Proyección Profesional</h2>
-    <div class="card">
-        Enfocado en el desarrollo de capacidades en automatización, inteligencia artificial aplicada a negocios y evolución de infraestructuras tecnológicas.
 
-        Con visión de crecimiento hacia roles gerenciales y directivos, contribuyendo en la toma de decisiones estratégicas y transformación organizacional.
+    <div class="section">
+        <h2>Proyección Profesional</h2>
+        <div class="card">
+            Enfocado en el desarrollo de capacidades en automatización, inteligencia artificial aplicada a negocios y evolución de infraestructuras tecnológicas.<br><br>
+
+            Con visión de crecimiento hacia roles gerenciales y directivos, contribuyendo en la toma de decisiones estratégicas y transformación organizacional.
+        </div>
     </div>
-</div>
+
     <div class="section">
         <h2>Contacto</h2>
         <div class="card">
