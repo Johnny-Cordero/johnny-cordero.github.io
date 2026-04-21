@@ -1,187 +1,432 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Johnny Cordero | Perfil Profesional</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-}
-
-header {
-    text-align: center;
-    padding: 60px 20px 80px;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-}
-
-.profile-photo {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #38bdf8;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.subtitle {
-    margin-top: 12px;
-    font-size: 1.05rem;
-    color: #cbd5e1;
-}
-
-h2 {
-    color: #38bdf8;
-    margin-bottom: 10px;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 10px;
-    line-height: 1.7;
-}
-
-a {
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 24px;
-    background: #020617;
-    color: #94a3b8;
-    font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnny Cordero | Perfil Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
     }
 
-    .subtitle {
-        font-size: 0.95rem;
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #081224 0%, #0b1730 100%);
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 72px 20px 60px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.15);
     }
 
     .profile-photo {
-        width: 130px;
-        height: 130px;
+      width: 155px;
+      height: 155px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      margin: 14px auto 0;
+      max-width: 850px;
+      font-size: 1.12rem;
+      color: #cbd5e1;
+    }
+
+    .hero-note {
+      margin: 18px auto 0;
+      max-width: 780px;
+      color: #94a3b8;
+      font-size: 0.98rem;
+    }
+
+    .hero-buttons {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #082032;
+    }
+
+    .btn-primary:hover {
+      background: #67d3ff;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      background: transparent;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(56, 189, 248, 0.08);
+      transform: translateY(-2px);
     }
 
     .container {
-        padding: 30px 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 55px 24px 80px;
+    }
+
+    .section {
+      margin-bottom: 42px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+      color: #38bdf8;
     }
 
     .card {
-        padding: 18px;
+      background: rgba(30, 41, 59, 0.94);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      font-size: 1.05rem;
     }
-}
-</style>
-</head>
 
+    .card p {
+      margin: 0 0 14px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .metric-card {
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      border-radius: 18px;
+      padding: 22px 18px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .metric-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #38bdf8;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .metric-label {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .skill-box {
+      background: rgba(30, 41, 59, 0.94);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    .skill-box h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.08rem;
+      color: #ffffff;
+    }
+
+    .skill-box ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .skill-box li {
+      margin-bottom: 7px;
+      color: #cbd5e1;
+    }
+
+    .contact-line {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.92rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    @media (max-width: 1024px) {
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 55px 18px 45px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+      }
+
+      h1 {
+        font-size: 2.1rem;
+      }
+
+      .container {
+        padding: 38px 16px 60px;
+      }
+
+      .card,
+      .skill-box,
+      .metric-card {
+        padding: 18px;
+      }
+
+      .metrics-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
 <body>
 
-<header>
+  <header>
     <img src="johnny-cordero.jpg" alt="Johnny Cordero" class="profile-photo">
     <h1>Johnny Cordero</h1>
     <p class="subtitle">Líder de Operaciones | MBA | Transformación Operativa & Evolución Tecnológica</p>
-</header>
+    <p class="hero-note">Perfil orientado a liderazgo operativo, desarrollo de talento, mejora continua y evolución hacia roles de mayor alcance estratégico.</p>
 
-<div class="container">
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank">Ver LinkedIn</a>
+      <a class="btn btn-secondary" href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <div class="container">
 
     <div class="section">
-        <h2>Resumen Ejecutivo</h2>
-        <div class="card">
-            Profesional con sólida trayectoria en liderazgo de operaciones en telecomunicaciones, gestionando equipos técnicos y garantizando la ejecución de servicios para clientes corporativos.<br><br>
-
-            Mi perfil integra ejecución operativa, liderazgo de equipos y visión estratégica, permitiéndome alinear la operación con los objetivos del negocio y generar impacto sostenible.<br><br>
-
-            Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda contribuir en iniciativas de transformación, optimización de procesos y desarrollo organizacional.
+      <h2>Impacto Profesional</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">96%</div>
+          <div class="metric-label">Resultado general ECO con reportes directos</div>
         </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-label">Resultado en Trabajo en Equipo</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-label">Satisfacción y compromiso organizacional</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">4+</div>
+          <div class="metric-label">Credenciales Cisco recertificadas en 2026</div>
+        </div>
+      </div>
     </div>
 
     <div class="section">
+      <h2>Resumen Ejecutivo</h2>
+      <div class="card">
+        <p>Profesional con sólida trayectoria en liderazgo de operaciones en telecomunicaciones, gestionando equipos técnicos y garantizando la ejecución de servicios para clientes corporativos.</p>
+        <p>Mi perfil integra ejecución operativa, liderazgo de equipos y visión estratégica, permitiéndome alinear la operación con los objetivos del negocio y generar impacto sostenible.</p>
+        <p>Actualmente enfocado en la evolución hacia roles de mayor alcance, donde pueda contribuir en iniciativas de transformación, optimización de procesos y desarrollo organizacional.</p>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="section">
         <h2>Experiencia</h2>
         <div class="card">
-            <strong>Claro Dominicana</strong><br>
-            Líder de Operaciones de Campo Negocios Metro-Este<br><br>
-            Liderazgo de equipos técnicos, coordinación inter-áreas y aseguramiento de calidad en servicios empresariales.
+          <p><strong>Claro Dominicana</strong></p>
+          <p>Líder de Operaciones de Campo Negocios Metro-Este</p>
+          <p>Liderazgo de equipos técnicos, coordinación inter-áreas y aseguramiento de calidad en servicios empresariales.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2>Logros Clave</h2>
         <div class="card">
-            ✔ Resultado ECO: 96% (alto compromiso del equipo)<br>
-            ✔ Implementación de planes de capacitación técnica<br>
-            ✔ Mejora continua de procesos operativos
+          <ul>
+            <li>Resultado ECO sobresaliente con alto nivel de compromiso del equipo</li>
+            <li>Implementación de planes de capacitación técnica post-assessment</li>
+            <li>Impulso de mejora continua en procesos operativos</li>
+            <li>Desarrollo continuo del perfil técnico con recertificaciones internacionales</li>
+          </ul>
         </div>
+      </div>
     </div>
 
     <div class="section">
+      <h2>Habilidades Clave</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Liderazgo</h3>
+          <ul>
+            <li>Liderazgo de equipos técnicos</li>
+            <li>Desarrollo de talento</li>
+            <li>Orientación a resultados</li>
+            <li>Comunicación efectiva</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Operaciones</h3>
+          <ul>
+            <li>Gestión de operaciones de campo</li>
+            <li>Mejora continua</li>
+            <li>Coordinación inter-áreas</li>
+            <li>Aseguramiento de calidad</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Tecnología</h3>
+          <ul>
+            <li>Networking</li>
+            <li>Collaboration</li>
+            <li>Security</li>
+            <li>Automation en desarrollo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="section">
         <h2>Certificaciones</h2>
         <div class="card">
-            Cisco (CCNA, Collaboration, Hybrid & Cloud)<br>
-            Fortinet (NSE 7, Security Networking)<br>
-            CompTIA Network+
+          <p>Cisco: CCNA, Collaboration Core, Call Control, Hybrid & Cloud</p>
+          <p>Fortinet: NSE 7 / Security Networking</p>
+          <p>CompTIA Network+</p>
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2>Formación</h2>
         <div class="card">
-            Global MBA – Gestión Estratégica de los Negocios (ADEN)
+          <p>Global MBA – Gestión Estratégica de los Negocios (ADEN)</p>
         </div>
+      </div>
     </div>
 
     <div class="section">
-        <h2>Proyección Profesional</h2>
-        <div class="card">
-            Enfocado en el desarrollo de capacidades en automatización, inteligencia artificial aplicada a negocios y evolución de infraestructuras tecnológicas.<br><br>
-
-            Con visión de crecimiento hacia roles gerenciales y directivos, contribuyendo en la toma de decisiones estratégicas y transformación organizacional.
-        </div>
+      <h2>Proyección Profesional</h2>
+      <div class="card">
+        <p>Enfocado en el desarrollo de capacidades en automatización, inteligencia artificial aplicada a negocios y evolución de infraestructuras tecnológicas.</p>
+        <p>Con visión de crecimiento hacia roles gerenciales y directivos, contribuyendo en la toma de decisiones estratégicas y transformación organizacional.</p>
+      </div>
     </div>
 
-    <div class="section">
-        <h2>Contacto</h2>
-        <div class="card">
-            📍 Santo Domingo, República Dominicana<br>
-            🔗 <a href="https://www.linkedin.com/in/johnny-cordero" target="_blank">LinkedIn</a>
-        </div>
+    <div class="section" id="contacto">
+      <h2>Contacto</h2>
+      <div class="card">
+        <div class="contact-line">📍 Santo Domingo, República Dominicana</div>
+        <div class="contact-line">🔗 <a href="https://www.linkedin.com/in/johnny-cordero" target="_blank">LinkedIn</a></div>
+      </div>
     </div>
+  </div>
 
-</div>
-
-<footer>
+  <footer>
     © 2026 Johnny Cordero
-</footer>
+  </footer>
 
 </body>
 </html>
