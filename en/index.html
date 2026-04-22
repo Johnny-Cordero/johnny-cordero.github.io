@@ -301,12 +301,88 @@
       to { transform: translateX(-50%); }
     }
 
+    /* executive visual profile */
+    .executive-poster-card {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.96));
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .executive-poster-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .executive-poster-image {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+    }
+
+    .executive-poster-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(56, 189, 248, 0.24);
+      background: rgba(56, 189, 248, 0.08);
+      color: #9fdcff;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .executive-poster-card h3 {
+      margin: 0 0 16px;
+      font-size: 1.7rem;
+      line-height: 1.25;
+      color: #ffffff;
+    }
+
+    .executive-poster-card p {
+      margin: 0 0 16px;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .executive-poster-points {
+      margin: 20px 0 24px;
+      padding-left: 20px;
+    }
+
+    .executive-poster-points li {
+      margin-bottom: 10px;
+      color: #dbe7f3;
+    }
+
+    .executive-poster-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .executive-poster-note {
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: #94a3b8;
+    }
+
     @media (max-width: 1024px) {
       .metrics-grid { grid-template-columns: repeat(2, 1fr); }
       .skills-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 900px) {
       .two-columns { grid-template-columns: 1fr; }
+      .executive-poster-grid { grid-template-columns: 1fr; }
+      .executive-poster-card h3 { font-size: 1.4rem; }
       h1 { font-size: 2.6rem; }
       .subtitle { font-size: 1.02rem; }
     }
@@ -323,7 +399,7 @@
       .subtitle { font-size: 0.98rem; }
       .hero-note, .hero-impact { font-size: 0.95rem; }
       .container { padding: 38px 16px 60px; }
-      .card, .skill-box, .metric-card { padding: 18px; }
+      .card, .skill-box, .metric-card, .executive-poster-card { padding: 18px; }
       .metrics-grid, .skills-grid { grid-template-columns: 1fr; }
       .btn { width: 100%; max-width: 280px; text-align: center; }
     }
@@ -343,8 +419,8 @@
     <p class="hero-impact">Leader of the Year 2024 and 2025 • 100% project execution timeliness during 2025</p>
 
     <div class="hero-buttons">
-      <a class="btn btn-primary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank">View LinkedIn Profile</a>
-      <a class="btn btn-secondary" href="cv-johnny-cordero-english.pdf" target="_blank">Download CV</a>
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank" rel="noopener">View LinkedIn Profile</a>
+      <a class="btn btn-secondary" href="cv-johnny-cordero-english.pdf" target="_blank" rel="noopener">Download CV</a>
       <a class="btn btn-secondary" href="#contact">Contact</a>
       <a class="btn btn-secondary" href="/">Español</a>
     </div>
@@ -394,6 +470,57 @@
         <p>Throughout my career, I have strengthened capabilities in leadership, continuous improvement, process optimization, and operational management, integrating execution discipline with strategic vision to deliver sustainable business value.</p>
         <p>My education in senior management, leadership, and business strategy, together with technical certifications in networking, collaboration, security, and automation, allows me to connect operations with business priorities, drive team evolution, and support transformation initiatives with sound judgment, consistency, and a results-oriented mindset.</p>
         <p>I believe in conscious, principle-based leadership as a foundation for strengthening culture, developing talent, elevating collective performance, and generating impact beyond day-to-day operations.</p>
+      </div>
+    </div>
+
+    <div class="section" id="executive-visual-profile">
+      <h2>Executive Visual Profile</h2>
+
+      <div class="executive-poster-card">
+        <div class="executive-poster-grid">
+          
+          <div>
+            <img
+              src="johnny-cordero-poster-en.png"
+              alt="English executive poster of Johnny Cordero with a focus on leadership, technology, operations, and strategy"
+              class="executive-poster-image"
+              loading="lazy"
+            >
+            <div class="executive-poster-note">
+              A visual synthesis of my professional value proposition.
+            </div>
+          </div>
+
+          <div>
+            <div class="executive-poster-tag">Professional brand</div>
+
+            <h3>A career that integrates operations, leadership, and strategic vision</h3>
+
+            <p>
+              I have built my career by leading operations, strengthening technical capabilities,
+              and developing teams oriented toward disciplined execution, excellence, and results.
+            </p>
+
+            <p>
+              My value proposition combines telecommunications experience, operational leadership,
+              process transformation, and executive education, enabling me to connect operational
+              reality with business priorities.
+            </p>
+
+            <ul class="executive-poster-points">
+              <li>Leadership in operations and continuous improvement in high-demand environments.</li>
+              <li>Solid technical foundation in networking, collaboration, security, and automation.</li>
+              <li>Executive perspective strengthened by managerial education, an MBA, and strategic focus.</li>
+            </ul>
+
+            <div class="executive-poster-actions">
+              <a class="btn btn-primary" href="cv-johnny-cordero-english.pdf" target="_blank" rel="noopener">Download CV</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
@@ -528,9 +655,9 @@
       <h2>Contact</h2>
       <div class="card">
         <div class="contact-line">📍 Santo Domingo, Dominican Republic</div>
-        <div class="contact-line">🔗 <a href="https://www.linkedin.com/in/johnny-cordero" target="_blank">LinkedIn</a></div>
+        <div class="contact-line">🔗 <a href="https://www.linkedin.com/in/johnny-cordero" target="_blank" rel="noopener">LinkedIn</a></div>
         <div class="contact-line">✉️ <a href="mailto:johnny.cordero1@gmail.com">johnny.cordero1@gmail.com</a></div>
-        <div class="contact-line">💬 <a href="https://wa.me/18097969711" target="_blank">WhatsApp</a></div>
+        <div class="contact-line">💬 <a href="https://wa.me/18097969711" target="_blank" rel="noopener">WhatsApp</a></div>
       </div>
     </div>
   </div>
