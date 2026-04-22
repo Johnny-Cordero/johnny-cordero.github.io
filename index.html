@@ -474,6 +474,92 @@
         animation: none;
     }
 }
+    /* =========================
+   PERFIL EJECUTIVO VISUAL
+   ========================= */
+
+.executive-poster-card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.96));
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.executive-poster-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.executive-poster-image {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+.executive-poster-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  background: rgba(56, 189, 248, 0.08);
+  color: #9fdcff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.executive-poster-card h3 {
+  margin: 0 0 16px;
+  font-size: 1.7rem;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.executive-poster-card p {
+  margin: 0 0 16px;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.executive-poster-points {
+  margin: 20px 0 24px;
+  padding-left: 20px;
+}
+
+.executive-poster-points li {
+  margin-bottom: 10px;
+  color: #dbe7f3;
+}
+
+.executive-poster-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.executive-poster-note {
+  margin-top: 12px;
+  font-size: 0.92rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .executive-poster-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .executive-poster-card h3 {
+    font-size: 1.4rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -541,6 +627,56 @@
       </div>
     </div>
 
+    <div class="section" id="perfil-ejecutivo">
+  <h2>Perfil Ejecutivo Visual</h2>
+
+  <div class="executive-poster-card">
+    <div class="executive-poster-grid">
+      
+      <div>
+        <img
+          src="johnny-cordero-poster.png"
+          alt="Póster de perfil ejecutivo de Johnny Cordero con enfoque en liderazgo, tecnología, operaciones y estrategia"
+          class="executive-poster-image"
+          loading="lazy"
+        >
+        <div class="executive-poster-note">
+          Síntesis visual de mi propuesta de valor profesional.
+        </div>
+      </div>
+
+      <div>
+        <div class="executive-poster-tag">Marca profesional</div>
+
+        <h3>Una vista ejecutiva de mi propuesta de valor</h3>
+
+        <p>
+          Esta pieza resume de forma visual mi experiencia, enfoque de liderazgo
+          y capacidades clave en operaciones, tecnología, estrategia y desarrollo organizacional.
+        </p>
+
+        <p>
+          Refuerza mi posicionamiento profesional integrando ejecución, visión de negocio,
+          transformación operativa, formación técnica y desarrollo de personas.
+        </p>
+
+        <ul class="executive-poster-points">
+          <li>Liderazgo de operaciones y mejora continua en entornos de alta exigencia.</li>
+          <li>Base técnica sólida en networking, collaboration, seguridad y automatización.</li>
+          <li>Visión ejecutiva fortalecida por formación gerencial, MBA y enfoque en resultados.</li>
+        </ul>
+
+        <div class="executive-poster-actions">
+          <a class="btn btn-primary" href="cv-johnny-cordero.pdf" target="_blank">Descargar CV</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank">LinkedIn</a>
+          <a class="btn btn-secondary" href="#contacto">Contactar</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    
     <div class="two-columns">
       <div class="section">
         <h2>Experiencia</h2>
