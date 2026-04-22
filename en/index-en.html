@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnny Cordero | Professional Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #081224 0%, #0b1730 100%);
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 88px 20px 74px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    }
+    .profile-photo {
+      display: block;
+      width: 155px;
+      height: 155px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      margin: 0 auto 20px;
+    }
+    .hero-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      max-width: 100%;
+      margin: 0 auto 20px;
+      padding: 8px 16px;
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 999px;
+      color: #9fdcff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.08);
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.6px;
+    }
+    .subtitle {
+      margin: 20px auto 0;
+      max-width: 980px;
+      font-size: 1.22rem;
+      color: #dbe7f3;
+      font-weight: 600;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .hero-note {
+      margin: 22px auto 0;
+      max-width: 980px;
+      color: #a9bbcf;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      text-align: center;
+    }
+    .hero-impact {
+      margin: 24px auto 0;
+      max-width: 920px;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+      text-align: center;
+    }
+    .hero-buttons {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+    .btn-primary {
+      background: #38bdf8;
+      color: #082032;
+    }
+    .btn-primary:hover {
+      background: #67d3ff;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .btn-secondary {
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      background: transparent;
+    }
+    .btn-secondary:hover {
+      background: rgba(56, 189, 248, 0.08);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .lang-link {
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: #9fdcff;
+    }
+    .lang-link a { color: #9fdcff; }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 55px 24px 80px;
+    }
+    .section { margin-bottom: 42px; }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+      color: #38bdf8;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.94);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      font-size: 1.05rem;
+    }
+    .card p { margin: 0 0 14px; }
+    .card p:last-child { margin-bottom: 0; }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 16px;
+    }
+    .metric-card {
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      border-radius: 18px;
+      padding: 22px 18px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+    .metric-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #38bdf8;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .metric-label {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .skill-box {
+      background: rgba(30, 41, 59, 0.94);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    }
+    .skill-box h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.08rem;
+      color: #ffffff;
+    }
+    .skill-box ul { padding-left: 18px; margin: 0; }
+    .skill-box li { margin-bottom: 7px; color: #cbd5e1; }
+    .contact-line { margin-bottom: 10px; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.92rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    /* certification loop */
+    .cert-badges-wrapper { margin-top: 28px; }
+    .cert-badges-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 14px;
+      letter-spacing: 0.3px;
+    }
+    .cert-marquee {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding: 10px 0;
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+    .cert-track {
+      display: flex;
+      width: max-content;
+      animation: cert-scroll 28s linear infinite;
+      will-change: transform;
+    }
+    .cert-group {
+      display: flex;
+      gap: 22px;
+      flex-shrink: 0;
+      padding-right: 22px;
+    }
+    .cert-badge {
+      width: 180px;
+      height: 180px;
+      flex: 0 0 auto;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      box-sizing: border-box;
+      backdrop-filter: blur(4px);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .cert-badge:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
+    }
+    .cert-badge img {
+      max-width: 100%;
+      max-height: 130px;
+      object-fit: contain;
+      display: block;
+    }
+    .cert-marquee:hover .cert-track { animation-play-state: paused; }
+    @keyframes cert-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 1024px) {
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 900px) {
+      .two-columns { grid-template-columns: 1fr; }
+      h1 { font-size: 2.6rem; }
+      .subtitle { font-size: 1.02rem; }
+    }
+    @media (max-width: 768px) {
+      .cert-badge { width: 140px; height: 140px; padding: 14px; }
+      .cert-badge img { max-height: 100px; }
+      .cert-track { animation-duration: 22s; }
+    }
+    @media (max-width: 640px) {
+      header { padding: 58px 18px 48px; }
+      .profile-photo { width: 130px; height: 130px; }
+      .hero-badge { font-size: 0.82rem; padding: 8px 14px; }
+      h1 { font-size: 2.15rem; }
+      .subtitle { font-size: 0.98rem; }
+      .hero-note, .hero-impact { font-size: 0.95rem; }
+      .container { padding: 38px 16px 60px; }
+      .card, .skill-box, .metric-card { padding: 18px; }
+      .metrics-grid, .skills-grid { grid-template-columns: 1fr; }
+      .btn { width: 100%; max-width: 280px; text-align: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cert-track { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="johnny-cordero.jpg" alt="Johnny Cordero" class="profile-photo">
+    <div class="hero-badge">Operations • Leadership • Transformation</div>
+    <h1>Johnny Cordero</h1>
+    <p class="subtitle">Operations Leadership | Nearly Two Decades of Experience | Transformation and Capability Development</p>
+    <p class="hero-note">Business operations professional with nearly two decades of experience at Claro Dominicana, driving results through operational transformation, execution excellence, and the development of high-performing teams.</p>
+    <p class="hero-impact">Leader of the Year 2024 and 2025 • 100% project execution timeliness during 2025</p>
+
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/johnny-cordero" target="_blank">View LinkedIn Profile</a>
+      <a class="btn btn-secondary" href="cv-johnny-cordero-english.pdf" target="_blank">Download CV</a>
+      <a class="btn btn-secondary" href="#contact">Contact</a>
+    </div>
+    <div class="lang-link"><a href="/">Ver versión en español</a></div>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Professional Impact</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">2024–2025</div>
+          <div class="metric-label">Recognized as Supervisor/Leader of the Year</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">91% → 100%</div>
+          <div class="metric-label">Improvement in project implementation timeliness between 2024 and 2025</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">Leadership</div>
+          <div class="metric-label">Strong internal recognition in leadership, climate, and team commitment</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">Development</div>
+          <div class="metric-label">Combined track record in technical certifications and international executive education</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Relevant Achievements</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Leadership recognition:</strong> selected as Supervisor/Leader of the Year in 2024 and 2025, reflecting consistency in performance, team leadership, and results delivery.</li>
+          <li><strong>Operational transformation:</strong> led internal process improvement initiatives, including the strategic insourcing of operational capabilities previously outsourced.</li>
+          <li><strong>Technical impact:</strong> defined and strengthened operational standards in critical infrastructure, including physical cabinet reorganization and the creation of internal management protocols.</li>
+          <li><strong>Capability development:</strong> designed, implemented, and scaled a broadband services lab at Academia Claro, later enabled for cross-functional use across the organization.</li>
+          <li><strong>Training and talent:</strong> led the transformation of the business training process, from gap assessment to deployment of learning initiatives aligned with identified needs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Executive Summary</h2>
+      <div class="card">
+        <p>Professional with nearly two decades of experience at Claro Dominicana, leading business operations and contributing to the execution, maintenance, optimization, and evolution of services in highly demanding corporate environments.</p>
+        <p>Throughout my career, I have strengthened capabilities in leadership, continuous improvement, process optimization, and operational management, integrating execution discipline with strategic vision to deliver sustainable business value.</p>
+        <p>My education in senior management, leadership, and business strategy, together with technical certifications in networking, collaboration, security, and automation, allows me to connect operations with business priorities, drive team evolution, and support transformation initiatives with sound judgment, consistency, and a results-oriented mindset.</p>
+        <p>I believe in conscious, principle-based leadership as a foundation for strengthening culture, developing talent, elevating collective performance, and generating impact beyond day-to-day operations.</p>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="section">
+        <h2>Experience</h2>
+        <div class="card">
+          <p><strong>Claro Dominicana</strong></p>
+          <p>Nearly two decades of experience across operations, support, implementation, and service evolution for corporate clients.</p>
+          <p>Currently: <strong>Field Operations Leader – Business Metro-East</strong>.</p>
+          <p>Career built on technical execution, operational leadership, continuous improvement, and organizational capability development.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Key Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Leadership</h3>
+            <ul>
+              <li>Technical team leadership</li>
+              <li>Talent development</li>
+              <li>Results orientation</li>
+              <li>Effective communication</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Operations</h3>
+            <ul>
+              <li>Field operations management</li>
+              <li>Continuous improvement</li>
+              <li>Cross-functional coordination</li>
+              <li>Quality assurance</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Technology</h3>
+            <ul>
+              <li>Networking</li>
+              <li>Collaboration</li>
+              <li>Security</li>
+              <li>Automation in development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <div class="card">
+        <p><strong>Cisco</strong><br>CCNA<br>CCNP Collaboration</p>
+        <p><strong>Fortinet</strong><br>Fortinet Certified Professional – Secure Networking<br>Fortinet Certified Solution Specialist – Secure Networking</p>
+        <p><strong>CompTIA</strong><br>Network+</p>
+      </div>
+
+      <div class="cert-badges-wrapper">
+        <div class="cert-badges-title">Featured Credentials</div>
+        <div class="cert-marquee">
+          <div class="cert-track">
+            <div class="cert-group">
+              <div class="cert-badge"><img src="ccna.png" alt="Cisco Certified CCNA"></div>
+              <div class="cert-badge"><img src="ccnp-collaboration.png" alt="Cisco Certified CCNP Collaboration"></div>
+              <div class="cert-badge"><img src="fortinet-fcp-secure-networking.png" alt="Fortinet Certified Professional Secure Networking"></div>
+              <div class="cert-badge"><img src="fortinet-fcss-secure-networking.png" alt="Fortinet Certified Solution Specialist Secure Networking"></div>
+              <div class="cert-badge"><img src="comptia-network-plus.png" alt="CompTIA Network+"></div>
+            </div>
+            <div class="cert-group" aria-hidden="true">
+              <div class="cert-badge"><img src="ccna.png" alt="Cisco Certified CCNA"></div>
+              <div class="cert-badge"><img src="ccnp-collaboration.png" alt="Cisco Certified CCNP Collaboration"></div>
+              <div class="cert-badge"><img src="fortinet-fcp-secure-networking.png" alt="Fortinet Certified Professional Secure Networking"></div>
+              <div class="cert-badge"><img src="fortinet-fcss-secure-networking.png" alt="Fortinet Certified Solution Specialist Secure Networking"></div>
+              <div class="cert-badge"><img src="comptia-network-plus.png" alt="CompTIA Network+"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Academic and Executive Education</h2>
+      <div class="card">
+        <p><strong>Global MBA – Strategic Business Management</strong></p>
+        <p>International executive education completed at <strong>ADEN Business School</strong>, with academic backing from <strong>ADEN</strong> and <strong>EUNCET Business School, affiliated with the Universitat Politècnica de Catalunya (UPC), Spain</strong>.</p>
+        <p>Complemented by the certificate from <strong>The George Washington University School of Business</strong>: <strong>Specialization in Strategic Business Management</strong>.</p>
+
+        <br>
+
+        <p><strong>Managerial Leadership Program</strong></p>
+        <p>ADEN Business School</p>
+        <p>Program focused on strengthening leadership, management, and executive perspective competencies.</p>
+
+        <br>
+
+        <p><strong>Bachelor's Degree in Computer Science</strong></p>
+        <p>Universidad Autónoma de Santo Domingo (UASD)</p>
+        <p>Graduated with honors: <strong>Cum Laude</strong>.</p>
+
+        <br>
+
+        <p><strong>Technical High School Diploma in Electronics, specialization in Computer Maintenance</strong></p>
+        <p>Liceo Técnico Unión Panamericana</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Complementary Leadership and Management Education</h2>
+      <div class="card">
+        <p>Education focused on strengthening capabilities in leadership, administrative management, negotiation, people development, and continuous improvement.</p>
+        <ul>
+          <li><strong>Diploma in Administrative Management and Managerial Leadership</strong> – INFOTEP</li>
+          <li><strong>Diploma in Finance for Non-Financial Managers</strong> – ADEN</li>
+          <li><strong>Diploma in Senior Management</strong> – Universidad Autónoma de Santo Domingo (UASD)</li>
+          <li><strong>Diploma in Problem Identification, Analysis, and Solution with Lean Six Sigma</strong> – Suprema Qualitas</li>
+          <li><strong>Supervision Fundamentals</strong> – INFOTEP</li>
+          <li><strong>Negotiation Techniques</strong> – INFOTEP</li>
+          <li><strong>Employee Development in the Workplace</strong> – INFOTEP</li>
+          <li><strong>Introduction to Business Coaching Techniques</strong> – INFOTEP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Professional Outlook</h2>
+      <div class="card">
+        <p>Focused on developing capabilities in automation, AI applied to business, and the evolution of technology infrastructures.</p>
+        <p>With a clear vision of growth toward managerial and executive roles, contributing to strategic decision-making and organizational transformation initiatives.</p>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <div class="contact-line">📍 Santo Domingo, Dominican Republic</div>
+        <div class="contact-line">🔗 <a href="https://www.linkedin.com/in/johnny-cordero" target="_blank">LinkedIn</a></div>
+        <div class="contact-line">✉️ <a href="mailto:johnny.cordero1@gmail.com">johnny.cordero1@gmail.com</a></div>
+        <div class="contact-line">💬 <a href="https://wa.me/18097969711" target="_blank">WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Johnny Cordero
+  </footer>
+
+</body>
+</html>
